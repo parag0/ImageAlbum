@@ -5,9 +5,9 @@ const gdriveController = require('../controller/gdriveController');
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Express' });
+  res.send(`App is running ${process.env.HEROKU_SERVER_PORT}`);
 });
 
-router.get('/test', gdriveController.dbxTest);
+router.get('/test', gdriveController.test);
 
 module.exports = router;
