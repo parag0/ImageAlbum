@@ -1,12 +1,13 @@
-var express = require('express');
-var router = express.Router();
-var dbxController = require('../controller/dbxController');
+const express = require('express');
+
+const router = express.Router();
+const gdriveController = require('../controller/gdriveController');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/test', dbxController.dbxTest);
+router.get('/test', gdriveController.dbxTest);
 
 module.exports = router;

@@ -1,0 +1,7 @@
+./.eslintrc
+./.eslintrc.js
+.eslintrc
+.eslintrc.js
+./.eslintignore
+/node_modules/*
+/docs/*
