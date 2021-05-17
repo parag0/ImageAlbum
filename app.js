@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const indexRouter = require('./routes/index');
 
-const SERVER_PORT = process.env.HEROKU_SERVER_PORT || 5000;
+const SERVER_PORT = process.env.PORT || 5000;
 
 const app = express();
 
