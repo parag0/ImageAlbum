@@ -3,7 +3,10 @@ const { google } = require('googleapis');
 
 module.exports.test = async (query) => {
   try {
-    console.log('GDRIVE_API_KEY', process.env.GDRIVE_API_KEY);
+    google.options({
+      headers: { referer: 'https://node-image-viewer.herokuapp.com' },
+    });
+
     const drive = google.drive({
       version: 'v3',
       auth: process.env.GDRIVE_API_KEY,
