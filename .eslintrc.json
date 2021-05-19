@@ -3,6 +3,7 @@
         "es2021": true,
         "node": true
     },
+    "parser": "@babel/eslint-parser",
     "extends": [
         "airbnb-base"
     ],
